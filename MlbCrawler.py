@@ -30,6 +30,8 @@ if __name__ == "__main__":
         PlotColumnEqualsDifferenceHistogram(year, "atbat_stand", "L"),
         PlotColumnEqualsHistogram(year, "inning_num", 1),
         PlotColumnEqualsHistogram(year, "inning_num", 9),
+        PlotColumnEqualsHistogram(year, "inning_home_team", "bos"),
+        PlotColumnEqualsDifferenceHistogram(year, 'inning_home_team', "bos"),
         PlotColumnEqualsDifferenceHistogram(year, 'home_plate_umpire', "Angel Hernandez"),
         PlotColumnEqualsDifferenceHistogram(year, 'home_plate_umpire', "Joe West"),
         PlotColumnEqualsHistogram(year, 'home_plate_umpire', "Joe West"),

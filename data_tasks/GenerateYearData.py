@@ -10,14 +10,14 @@ class GenerateYearData(luigi.Task):
     year = luigi.YearParameter()
 
     def requires(self):
-        return [ParseSchedules(self.year), ParseRetroSheetData(self.year)]
+        return ParseSchedules(self.year)
 
     def output(self):
         return luigi.LocalTarget('{year:%Y}/{year:%Y}.csv'.format(year=self.year))
 
     def run(self):
         year_dataframe = pd.DataFrame()
-        with self.input()[0].open('r') as inputfile:
+        with self.input().open('r') as inputfile:
             schedule = pd.read_csv(inputfile, parse_dates=["date"])
 
             parsed_game_data = []

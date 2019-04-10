@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 from visualization_tasks.PlotColumnEqualsData import PlotColumnEqualsData
-from Visualizer import Visualizer
+from visualization_tasks.Visualizer import Visualizer
 from data_tasks.MergeRetroSheetData import MergeRetroSheetData
 
 class PlotColumnEqualsDifferenceHistogram(luigi.Task):

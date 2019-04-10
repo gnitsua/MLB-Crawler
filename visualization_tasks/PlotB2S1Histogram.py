@@ -2,7 +2,7 @@ import luigi as luigi
 import pandas as pd
 
 from data_tasks.GenerateYearData import GenerateYearData
-from Visualizer import Visualizer
+from visualization_tasks.Visualizer import Visualizer
 
 
 class PlotB2S1Histogram(luigi.Task):

@@ -1,7 +1,7 @@
 import luigi as luigi
 import pandas as pd
 
-from Visualizer import Visualizer
+from visualization_tasks.Visualizer import Visualizer
 from visualization_tasks.PlotColumnEqualsData import PlotColumnEqualsData
 
 
