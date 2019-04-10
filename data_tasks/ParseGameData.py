@@ -1,9 +1,11 @@
 import luigi as luigi
+from luigi_soft_failures import softly_failing
 
 from data_tasks.DownloadGameData import DownloadGameData
 from PitchStatParser import PitchStatParser
 
 
+@softly_failing(catch_all=True, propagate=False)
 class ParseGameData(luigi.Task):
     date = luigi.DateParameter()
     home_team = luigi.Parameter()

@@ -1,0 +1,7 @@
+Summary Statistics for the 2015 season
+Number of pitches: 370678
+Number of strikes: 118472
+Number of balls: 252206
+Number of balls that were called strikes: 20824 (17.577149)
+Number of strikes that were called balls: 21766 (8.630247)
+Probability of two balls having the same position: 3.783068

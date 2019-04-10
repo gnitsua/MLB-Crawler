@@ -116,4 +116,5 @@ dmypy.json
 .idea/
 **.xml
 **.csv
-
+**/images/
+**/raw_data/

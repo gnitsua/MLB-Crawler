@@ -8,7 +8,6 @@ import luigi as luigi
 
 from data_tasks import FileDownloader
 
-
 class DownloadGameData(luigi.Task):
     date = luigi.DateParameter()
     home_team = luigi.Parameter()
