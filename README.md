@@ -8,15 +8,11 @@ Data analysis funcitons are heavily focused on pitching data, but it is possible
 
 # Installation
 
-This project uses Anaconda for installation. You can get it here: https://www.anaconda.com/
-
-After installing Anaconda run the following command:
+This project uses pip to manage its requirments. To install all required packages use the following command
 
 `
-conda install --name myenv --file envoriment.yml
+pip install -r requirements.txt
 `
-
-Be sure to activate your enviroment before running
 
 # Execution
 

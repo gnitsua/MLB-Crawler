@@ -1,0 +1,24 @@
+certifi==2018.11.29
+chardet==3.0.4
+cycler==0.10.0
+dateparser==0.7.0
+docutils==0.14
+idna==2.8
+kiwisolver==1.0.1
+lockfile==0.12.2
+luigi==2.8.2
+luigi-soft-failures==0.1.1
+matplotlib==3.0.2
+numpy==1.15.4
+pandas==0.23.4
+pyparsing==2.3.0
+python-daemon==2.1.2
+python-dateutil==2.7.5
+pytz==2018.7
+regex==2018.11.22
+requests==2.21.0
+six==1.12.0
+tornado==4.5.3
+tzlocal==1.5.1
+urllib3==1.24.1
+-e git+https://github.com/gnitsua/versioned_classes.git@335e76f69cfb7a1f626b5e15b9215f6c66de7e10#egg=versioned_classes
