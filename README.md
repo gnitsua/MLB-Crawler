@@ -4,7 +4,7 @@ The goal of this project is to create a simple tool for downloading and parsing 
 This repository contains a variety of helpful Luigi tasks for generating both `.csv` data and visualizations.
 Data analysis funcitons are heavily focused on pitching data, but it is possible to modify the parser to fit your needs.
 
-!(Example visualization)[https://github.com/gnitsua/MLB-Crawler/blob/master/doc/2015_histogram.png]
+<img src="https://github.com/gnitsua/MLB-Crawler/blob/master/doc/2015_histogram.png" width="350">
 
 # Installation
 
@@ -26,7 +26,7 @@ To run the parser use the following command (replace "2015" with the year you wi
 
 # Task architecture
 
-!(block diagram of the task graph)[https://github.com/gnitsua/MLB-Crawler/blob/master/doc/Untitled%20Diagram.png]
+<img src="https://github.com/gnitsua/MLB-Crawler/blob/master/doc/Untitled%20Diagram.png" width="550">
 
 # Game downloads
 
