@@ -5,9 +5,11 @@ import time
 # svm rbm kernel
 # descriminit classifier
 import luigi as luigi
+from luigi_soft_failures import softly_failing
 
 from data_tasks import FileDownloader
 
+@softly_failing(catch_all=True, propagate=True)
 class DownloadGameData(luigi.Task):
     date = luigi.DateParameter()
     home_team = luigi.Parameter()

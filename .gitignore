@@ -118,3 +118,5 @@ dmypy.json
 **.csv
 **/images/
 **/raw_data/
+*.txt
+soft_failures/

@@ -9,16 +9,14 @@ import xml.etree.ElementTree as ET
 
 import numpy as np
 import pandas as pd
+from versioned_classes import versioned_class
 
 
 # todo: this doesn't need to be a class
+@versioned_class
 class PitchStatParser:
     def __init__(self):
-        m = hashlib.md5()
-        for methodname, method in inspect.getmembers(self):
-            if inspect.ismethod(method):
-                m.update(inspect.getsource(method).encode("utf-8"))
-        self.parser_version = m.hexdigest()
+        pass
 
     def parse(self, fileName):
         tree = ET.parse(fileName)
@@ -58,7 +56,7 @@ class PitchStatParser:
         return self.pitchDataFrame
 
     def clean_data(self):
-        self.removeColumns()
+        # self.removeColumns()
         self.stringToFloats()
         self.stringToDates(["atbat_end_tfs_zulu", "atbat_start_tfs_zulu", "pitch_tfs_zulu"])
         self.stringToHeight()
@@ -71,8 +69,8 @@ class PitchStatParser:
         self.removeDataWithoutSxSz()
         self.addNormalizedPitchZColumn()
         self.addNormalizedPitchXColumn()
-        self.removeHits()
-        self.onlyCalledStrikes()
+        # self.removeHits()
+        # self.onlyCalledStrikes()
         self.addCorrectCallColumn()
 
     def removeColumns(self):
