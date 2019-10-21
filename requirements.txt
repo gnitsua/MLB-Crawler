@@ -20,5 +20,5 @@ requests==2.21.0
 six==1.12.0
 tornado==4.5.3
 tzlocal==1.5.1
-urllib3==1.24.1
+urllib3==1.24.2
 -e git+https://github.com/gnitsua/versioned_classes.git@335e76f69cfb7a1f626b5e15b9215f6c66de7e10#egg=versioned_classes
